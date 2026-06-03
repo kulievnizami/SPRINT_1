@@ -10,8 +10,6 @@ public class Mysteryman extends Monster{
     public String getImage() {
         return image;
     }
-
-    //    @Override
     public void setImage(String image) {
         this.image = image;
     }

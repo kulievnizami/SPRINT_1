@@ -11,7 +11,6 @@ public class GoodMonst extends Monster{
         return image;
     }
 
-    //    @Override
     public void setImage(String image) {
         this.image = image;
     }

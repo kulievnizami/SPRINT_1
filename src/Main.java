@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws UnsupportedEncodingException {
         System.setOut(new java.io.PrintStream(System.out, true, "UTF-8"));
+        System.out.println("Выберите поля игры");
 
 
         String castle = "\uD83C\uDFF0";
@@ -26,10 +27,10 @@ public class Main {
         }
 
 
+
+
         int countMonster = sizeBoard * sizeBoard - sizeBoard - 5;
         Random r = new Random();
-
-        // для работы сбольшим количеством монстров воспользуемся массивом
         Monster[] arrMonster = new Monster[countMonster + 1];
         int count = 0;
         Monster test;
@@ -85,7 +86,6 @@ public class Main {
                     int x = sc.nextInt();
                     int y = sc.nextInt(
 );
-                    // проверка
                     if (person.moveCorrect(x, y)) {
                         String next = board[y - 1][x - 1];
                         if (next.equals("  ")) {

@@ -8,17 +8,14 @@ public class BigMonster extends Monster{
         super(sizeBoard);
     }
 
-    //    @Override
     public String getImage() {
         return image;
     }
 
-    //    @Override
     public void setImage(String image) {
         this.image = image;
     }
 
-    // переопредилим метод:
     @Override
     public boolean taskMonster(int difficultGame){
         System.out.println("Решите задачу:");
